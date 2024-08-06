@@ -111,7 +111,8 @@ h2 {
     justify-content: center;
     gap: 2rem;
 }
-.portfolio  h2 {
+
+.portfolio h2 {
     color: white;
 }
 
@@ -121,16 +122,88 @@ h2 {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 1200px;
+    width: 300px;
     max-width: 100%;
+    position: relative;
 }
 
-pre {
+.project pre {
+    max-height: 200px;
+    overflow-y: auto;
     background: #282c34;
     color: #61dafb;
     padding: 1rem;
     border-radius: 8px;
     overflow-x: auto;
+}
+
+.expand-btn {
+    background: #61dafb;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.expand-btn i {
+    font-size: 1rem;
+}
+
+.expand-btn:hover {
+    background: #21a1f1;
+}
+
+.code-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.code-overlay-content {
+    background: #282c34;
+    color: #61dafb;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+}
+
+.close-btn {
+    background: #61dafb;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+
+.close-btn i {
+    font-size: 1rem;
+}
+
+.close-btn:hover {
+    background: #21a1f1;
 }
 
 footer {
